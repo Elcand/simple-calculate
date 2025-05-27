@@ -6,18 +6,21 @@ body {
 .container {
   justify-content: center;
   margin: 10rem 35% auto 35%;
-  padding: 10px 30px auto 30px;
+  padding: 10px 40px auto 40px;
   text-align: center;
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(18, 18, 18);
+  border-radius: 12px;
 }
 
 #display {
-  height: 4.5rem;
+  background-color: rgb(18, 18, 18);
+  height: 5rem;
   width: 28.4rem;
+  border-radius: 12px;
+  border: none;
 }
 
 #calculate {
-  background-color: #e7e7e7;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 8px;
@@ -42,17 +45,17 @@ button {
 .btn-kali,
 .btn-kurang,
 .btn-tambah {
-  background-color: rgb(255, 136, 0);
+  background-color: rgb(90, 90, 90);
 }
 
 .btn-total {
-  background-color: #28a745;
+  background-color: rgb(103, 144, 210);
   grid-column: span 3;
   font-size: 28px;
 }
 
 .hapus {
-  background-color: crimson;
+  background-color: rgb(74, 74, 74);
   color: white;
 }
 
