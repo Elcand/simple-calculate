@@ -12,31 +12,31 @@
 
 <body>
     <div class="container">
-        <input id="display" readonly />
+        <input id="display" readonly placeholder="0"/>
         <hr>
         <div id="calculate">
-            <button class="hapus">C</button>
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="btn-bagi"><i class="fas fa-divide"></i></button>
+            <button class="hapus" onclick="clearDisplay()">C</button>
+            <button class="number" onclick="numberInput('1')">1</button>
+            <button class="number" onclick="numberInput('2')">2</button>
+            <button class="number" onclick="numberInput('3')">3</button>
+            <button class="btn-bagi" onclick="numberInput('/')"><i class="fas fa-divide"></i></button>
 
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="btn-kali"><i class="fas fa-xmark"></i></button>
+            <button class="number" onclick="numberInput('4')">4</button>
+            <button class="number" onclick="numberInput('5')">5</button>
+            <button class="number" onclick="numberInput('6')">6</button>
+            <button class="btn-kali" onclick="numberInput('*')"><i class="fas fa-xmark"></i></button>
 
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="btn-kurang"><i class="fas fa-minus"></i></button>
+            <button class="number" onclick="numberInput('7')">7</button>
+            <button class="number" onclick="numberInput('8')">8</button>
+            <button class="number" onclick="numberInput('9')">9</button>
+            <button class="btn-kurang" onclick="numberInput('-')"><i class="fas fa-minus"></i></button>
 
-            <button class="number">00</button>
-            <button class="number">0</button>
-            <button class="number">.</button>
-            <button class="btn-tambah"><i class="fas fa-plus"></i></button>
+            <button class="number" onclick="numberInput('00')">00</button>
+            <button class="number" onclick="numberInput('0')">0</button>
+            <button class="number" onclick="numberInput('.')">.</button>
+            <button class="btn-tambah" onclick="numberInput('+')"><i class="fas fa-plus"></i></button>
 
-            <button class="btn-total"><i class="fas fa-equals"></i></button>
+            <button class="btn-total" onclick="calculate()"><i class="fas fa-equals"></i></button>
         </div>
     </div>
 </body>
